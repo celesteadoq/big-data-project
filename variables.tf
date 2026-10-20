@@ -11,10 +11,9 @@ variable "db_user" {
 }
 
 variable "db_password" {
-  description = "Senha do PostgreSQL"
+  description = "Senha de acesso ao banco PostgreSQL"
   type        = string
   sensitive   = true
-  default     = "transito_pass_2026"
 }
 
 variable "db_port" {
@@ -30,8 +29,7 @@ variable "minio_root_user" {
 }
 
 variable "minio_root_password" {
-  description = "Senha do MinIO"
+  description = "Senha do administrador do MinIO"
   type        = string
   sensitive   = true
-  default     = "minio_senha_123"
 }

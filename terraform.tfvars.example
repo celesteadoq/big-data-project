@@ -1,0 +1,2 @@
+db_password         = "sua_senha_aqui"
+minio_root_password = "sua_senha_aqui"

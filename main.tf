@@ -47,7 +47,7 @@ resource "docker_container" "postgres_db" {
 
 # --- MINIO (Data Lake S3 Local) ---
 resource "docker_image" "minio_image" {
-  name         = "minio/minio:latest"
+  name         = "coollabsio/minio:latest"
   keep_locally = true
 }
 

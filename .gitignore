@@ -1,0 +1,20 @@
+# Arquivos de estado e cache do Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Credenciais e Senhas locais
+terraform.tfvars
+*.auto.tfvars
+
+# Dados locais (ignora CSVs, mas mantém a estrutura de pastas via .gitkeep)
+data/versao.original/*.csv
+data/versao.resultado/*.csv
+!data/**/.gitkeep
+
+# Ambientes virtuais e cache do Python
+__pycache__/
+*.pyc
+.venv/
+venv/
