@@ -36,6 +36,7 @@ resource "docker_container" "postgres_db" {
   ports {
     internal = 5432
     external = var.db_port
+     ip       = "127.0.0.1"
   }
 
   env = [
@@ -69,11 +70,13 @@ resource "docker_container" "minio_s3" {
   ports {
     internal = 9000
     external = 9000
+     ip       = "127.0.0.1"
   }
 
   ports {
     internal = 9001
     external = 9001
+     ip       = "127.0.0.1"
   }
 
   env = [
